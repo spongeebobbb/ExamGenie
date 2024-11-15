@@ -7,6 +7,7 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
+    line-height: 1.6;
 }
 
 header {
@@ -22,7 +23,7 @@ header {
 
 .logo {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 
@@ -30,28 +31,47 @@ header {
     color: #fff;
     margin-left: 1rem;
     text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
 }
 
+.nav-links a:hover {
+    color: #ccc;
+}
 .signup-btn {
     padding: 0.5rem 1rem;
-    background-color: #fff;
-    color: #4C52C4;
+    background-color: #4C52C4; /* Match primary button background */
+    color: #fff;               /* White text to match */
     border-radius: 5px;
-    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #3a3f8f; /* Darker shade on hover */
+    color: #fff;
 }
 
 .hero {
     text-align: center;
-    padding: 2rem;
-    background: #f9f9f9;
+    padding: 3rem 1rem;
+    background: linear-gradient(to bottom, #f9f9f9, #ececec);
 }
 
 .hero h1 {
     font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
 }
 
 .highlight {
     color: #4C52C4;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
 }
 
 .cta-buttons {
@@ -63,7 +83,10 @@ header {
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 1rem;
     margin: 0.5rem;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .primary-btn {
@@ -71,21 +94,32 @@ header {
     color: #fff;
 }
 
+.primary-btn:hover {
+    background-color: #3a3f8f;
+    color: #fff;
+}
+
 .secondary-btn {
     background-color: #fff;
     color: #4C52C4;
-    border: 1px solid #4C52C4;
+    border: 2px solid #4C52C4;
+}
+
+.secondary-btn:hover {
+    background-color: #4C52C4;
+    color: #fff;
 }
 
 .features {
-    padding: 2rem;
+    padding: 3rem 1rem;
     background-color: #fff;
     text-align: center;
 }
 
 .features h2 {
     font-size: 2rem;
-    margin-bottom: 1rem;
+    color: #333;
+    margin-bottom: 1.5rem;
 }
 
 .feature-grid {
@@ -101,10 +135,20 @@ header {
     padding: 1.5rem;
     border-radius: 10px;
     max-width: 300px;
+    transition: box-shadow 0.3s;
+}
+
+.feature:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .feature h3 {
     color: #4C52C4;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     margin-bottom: 0.5rem;
+}
+
+.feature p {
+    color: #666;
+    font-size: 1rem;
 }
