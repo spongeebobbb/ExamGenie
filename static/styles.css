@@ -152,3 +152,57 @@ header {
     color: #666;
     font-size: 1rem;
 }
+
+
+/* Base styling for the user info container */
+.user-info-container {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background-color: #f4f7fc;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #333;
+}
+
+.user-greeting {
+    font-size: 2rem;
+    color: #4CAF50; /* Green color */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.user-email, .last-login {
+    font-size: 1.1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+.email, .login-date {
+    font-weight: bold;
+    color: #444;
+}
+
+/* Button styling for Logout */
+.logout-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    background-color: #FF4081;  /* Pinkish color for logout */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #f50057; /* Darker pink for hover effect */
+}
+
+.logout-btn:focus {
+    outline: none;
+}

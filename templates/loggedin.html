@@ -1,0 +1,29 @@
+<!-- loggedin.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logged In</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    {% extends "base.html" %}
+
+    {% block title %}Logged In{% endblock %}
+    
+    {% block content %}
+        <div class="user-info-container">
+            <h2 class="user-greeting">Hi, {{ user['name'] }}!</h2>  <!-- Display the user's name -->
+            
+            
+    
+        
+        </div>
+    
+        <!-- Include the features section below the user info -->
+        {% include 'features.html' %}
+    {% endblock %}
+    
+</body>
+</html>
